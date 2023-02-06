@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Zomato</title>
+    <style>
+.nav{
+    display: flex;
+    justify-content: space-between;
+   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+
+}
+.nav>div:nth-child(2){
+  display: flex;
+  color: rgb(61, 61, 225);
+  
+}
+.nav>div:nth-child(2)>p{
+ margin-right: 5vw;
+ margin-top: 3vh;
+}
+  
+
+button{
+    color: white;
+    background-color: red;
+    height: 5vh;
+    margin-top: 1vh;
+    border: 1px red;
+    margin-right: 1vw;
+    font-size: 800;
+}
+.top{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 2vh 5vw 4vh 5vw;
+    text-align: left;
+}
+.mid{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    justify-content: space-between;
+    margin-left: -3vw;
+    text-align: center;
+    row-gap: 40px;
+}
+#btn{
+    background-color: white;
+    color: blue;
+    font-weight: 700;
+    border: none;
+    margin-top: -18px;
+
+}
+.bottom{
+    display: flex;
+    margin-left: 0vw;
+    justify-content: space-between;
+    text-align: center;
+}
+p{
+    margin-top: -12px;
+}
+
+
+
+
+      /* Write all styles here  */
+      @media only screen and (max-width: 800px) {
+        /* Medium Screen  */
+        .nav>div:nth-child(2){
+            display: none;
+        }
+        .top{
+            display: flex;
+            flex-direction: column;
+        }
+        .mid{
+          display: grid;
+            grid-template-columns: repeat(2,1fr);
+        }
+        .bottom{
+            display: flex;
+            flex-direction: column;
+        }
+      }
+
+      @media only screen and (max-width: 500px) {
+        /* Small Screen  */
+        .nav>div:nth-child(2){
+            display: none;
+        }
+        .top{
+            display: flex;
+            flex-direction: column;
+        }
+        .mid{
+          display: grid;
+            grid-template-columns: repeat(1,1fr);
+        }
+        .bottom{
+            display: flex;
+            flex-direction: column;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="nav">
+    <h1 style="color:red;margin: 1vh;">Zomato</h1>
+    <div>
+        <p>MENU</p>
+        <p>STORIES</p>
+        <p>GIFT CARD</p>
+        <p>CONTANCT</p>
+    </div>
+    <button>Download App</button>
+    </div>
+    <h1 style="margin-left:5vw">Order</h1>
+    <div class="top">
+      
+      <div>
+      <img src="./image/c1.avif" alt="">
+      <h3>Order Online</h3>
+      <p>stay home & make order</p>
+      </div>
+      <div>
+        <img src="./image/c1.avif" alt="">
+        <h3>Order Online</h3>
+        <p>stay home & make order</p>
+        </div>
+        <div>
+            <img src="./image/c1.avif" alt="">
+            <h3>Order Online</h3>
+            <p>stay home & make order</p>
+            </div>
+    </div>
+    <h1 style="margin-left: 5vw;">Our products</h1>
+    <div class="mid">
+     
+      <div>
+      <img src="./image/c2.avif" alt="">
+      <h3>Online Ordering</h3>
+      <button id="btn">Learn More</button>
+      </div>
+      <div>
+        <img src="./image/c2.avif" alt="">
+        <h3>Online Ordering</h3>
+        <button id="btn">Learn More</button>
+        </div>
+        <div>
+            <img src="./image/c2.avif" alt="">
+            <h3>Online Ordering</h3>
+            <button id="btn">Learn More</button>
+            </div>
+            <div>
+                <img src="./image/c2.avif" alt="">
+                <h3>Online Ordering</h3>
+                <button id="btn">Learn More</button>
+                </div> 
+                <div>
+                    <img src="./image/c2.avif" alt="">
+                    <h3>Online Ordering</h3>
+                    <button id="btn">Learn More</button>
+                    </div>
+                    <div>
+                        <img src="./image/c2.avif" alt="">
+                        <h3>Online Ordering</h3>
+                        <button id="btn">Learn More</button>
+                        </div>
+    </div>
+    <h1 style="margin-left: 43vw;">How it works</h1>
+    <div class="bottom">
+      
+      <div>
+        <img src="./image/c3.webp" alt="">
+        <h3>Step 1</h3>
+        <p>Lorem ipsum dolor sit amet.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisic. .</p>
+      </div>
+      <div>
+        <img src="./image/c3.webp" alt="">
+        <h3>Step 2</h3>
+        <p>Lorem ipsum dolor sit amet.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisic. .</p>
+      </div>
+      <div>
+        <img src="./image/c3.webp" alt="">
+        <h3>Step 3</h3>
+        <p>Lorem ipsum dolor sit amet.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisic. .</p>
+      </div>
+    </div>
+  </body>
+</html>
